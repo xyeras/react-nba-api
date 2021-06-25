@@ -28,9 +28,7 @@ const PlayerStatsPage = () => {
         const response = await axios.get('https://www.balldontlie.io/api/v1/players');
         setPlayers(response.data.data);
         
-        console.log(response.data);
-        console.log(response.data.data);
-        console.log(response.data.data[0].first_name, response.data.data[0].last_name, response.data.data[0].position, response.data.data[0].team.full_name);
+        // FIXME
         
     }
 
@@ -69,16 +67,7 @@ const PlayerStatsPage = () => {
             let player1 = response.data.data[0];
             setPlayer1(player1);
 
-            console.log(response.data);
-            console.log(response.data.data[0]);
-            console.log(response.data.data[0]?.ast);
-            console.log(response.data.data[0]?.reb);
-            console.log(response.data.data[0]?.pts);
-            
-            console.log(player1);
-            console.log(player1?.ast);
-            console.log(player1?.reb);
-            console.log(player1?.pts);
+            // FIXME
 
         }
         catch (e) {
@@ -122,16 +111,7 @@ const PlayerStatsPage = () => {
             let player2 = response.data.data[0];
             setPlayer2(player2);
 
-            console.log(response.data);
-            console.log(response.data.data[0]);
-            console.log(response.data.data[0]?.ast);
-            console.log(response.data.data[0]?.reb);
-            console.log(response.data.data[0]?.pts);
-            
-            console.log(player2);
-            console.log(player2?.ast);
-            console.log(player2?.reb);
-            console.log(player2?.pts);
+            // FIXME
 
         }
         catch (e) {

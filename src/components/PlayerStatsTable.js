@@ -7,34 +7,7 @@ const PlayerStatsTable = ( {player1Stats, player2Stats} ) => { // Passing props 
 
             <h3 className="text-center my-3">Player Overview</h3>
 
-            <table className="table table-hover">
-              <thead>
-                <tr>
-                    {/* Labels written in first row of table */}
-                    <th scope="col">Player</th>
-                    <th scope="col">Assists</th>
-                    <th scope="col">Rebounds</th>
-                    <th scope="col>">Points</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                    {/* Information for Player 1 in second row */}
-                    <th scope="row">1</th>
-                    <td>{(!player1Stats?.ast) ? 'N/A': player1Stats?.ast}</td>
-                    <td>{(!player1Stats?.reb) ? 'N/A': player1Stats?.reb}</td>
-                    <td>{(!player1Stats?.pts) ? 'N/A': player1Stats?.pts}</td>
-                </tr>
-
-                <tr>
-                    {/* Information for Player 2 in third row */}
-                    <th scope="row">2</th>
-                    <td>{(!player2Stats?.ast) ? 'N/A': player2Stats?.ast}</td>
-                    <td>{(!player2Stats?.reb) ? 'N/A': player2Stats?.reb}</td>
-                    <td>{(!player2Stats?.pts) ? 'N/A': player2Stats?.pts}</td>
-                </tr>
-              </tbody>
-            </table>
+            {/* FIXME */}
 
           </div>
     );
