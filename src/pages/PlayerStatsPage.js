@@ -27,8 +27,12 @@ const PlayerStatsPage = () => {
 
         const response = await axios.get('https://www.balldontlie.io/api/v1/players');
         setPlayers(response.data.data);
+        console.log('getAllPlayers');
+        console.log('players: ', players);
         
-        // FIXME
+        console.log('response.data: ',response.data);
+        console.log('response.data.data: ', response.data.data);
+        console.log('printing out first player in dataset: ', response.data.data[0].first_name, response.data.data[0].last_name, response.data.data[0].position, response.data.data[0].team.full_name);
         
     }
 
@@ -40,7 +44,8 @@ const PlayerStatsPage = () => {
 
         if (!playerId) { playerId = 0 };
 
-        console.log(playerId);
+        console.log('fetchPlayer1');
+        console.log('playerId is', playerId);
 
         try {
             const response = await axios.get(`https://www.balldontlie.io/api/v1/season_averages?season=2018&player_ids[]=${playerId}`);
@@ -60,14 +65,24 @@ const PlayerStatsPage = () => {
 
         if (!playerId) { playerId = 0 };
 
-        console.log(playerId);
+        console.log('getPlayer1Stats');
+        console.log('playId is ', playerId);
 
         try {
             const response = await axios.get(`https://www.balldontlie.io/api/v1/season_averages?season=2018&player_ids[]=${playerId}`);
             let player1 = response.data.data[0];
             setPlayer1(player1);
 
-            // FIXME
+            console.log('response.data: ', response.data);
+            console.log('response.data.data[0]: ', response.data.data[0]);
+            console.log('response.data.data[0]?.ast: ', response.data.data[0]?.ast);
+            console.log('response.data.data[0]?.reb: ', response.data.data[0]?.reb);
+            console.log('response.data.data[0]?.pts: ', response.data.data[0]?.pts);
+            
+            console.log('player1: ', player1);
+            console.log('player1?.ast: ', player1?.ast);
+            console.log('player1?.reb: ', player1?.reb);
+            console.log('player1?.pts: ', player1?.pts);
 
         }
         catch (e) {
@@ -84,7 +99,8 @@ const PlayerStatsPage = () => {
 
         if (!playerId) { playerId = 0 };
         
-        console.log(playerId);
+        console.log('fetchPlayer2');
+        console.log('playerId is ', playerId);
     
         try {
             const response = await axios.get(`https://www.balldontlie.io/api/v1/season_averages?season=2018&player_ids[]=${playerId}`);
@@ -104,14 +120,24 @@ const PlayerStatsPage = () => {
 
         if (!playerId) { playerId = 0 }; // If playerId is undefined, set playerId to be 0
 
-        console.log(playerId);
+        console.log('getPlayer2Stats');
+        console.log('playerId is ', playerId);
 
         try {
             const response = await axios.get(`https://www.balldontlie.io/api/v1/season_averages?season=2018&player_ids[]=${playerId}`);
             let player2 = response.data.data[0];
             setPlayer2(player2);
 
-            // FIXME
+            console.log('response.data: ', response.data);
+            console.log('response.data.data[0]: ', response.data.data[0]);
+            console.log('response.data.data[0]?.ast: ', response.data.data[0]?.ast);
+            console.log('response.data.data[0]?.reb: ', response.data.data[0]?.reb);
+            console.log('response.data.data[0]?.pts: ', response.data.data[0]?.pts);
+            
+            console.log('player2: ', player1);
+            console.log('player2?.ast: ', player1?.ast);
+            console.log('player2?.reb: ', player1?.reb);
+            console.log('player2?.pts: ', player1?.pts);
 
         }
         catch (e) {
