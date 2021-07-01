@@ -134,10 +134,10 @@ const PlayerStatsPage = () => {
             console.log('response.data.data[0]?.reb: ', response.data.data[0]?.reb);
             console.log('response.data.data[0]?.pts: ', response.data.data[0]?.pts);
             
-            console.log('player2: ', player1);
-            console.log('player2?.ast: ', player1?.ast);
-            console.log('player2?.reb: ', player1?.reb);
-            console.log('player2?.pts: ', player1?.pts);
+            console.log('player2: ', player2);
+            console.log('player2?.ast: ', player2?.ast);
+            console.log('player2?.reb: ', player2?.reb);
+            console.log('player2?.pts: ', player2?.pts);
 
         }
         catch (e) {
