@@ -20,6 +20,8 @@ const PlayerStatsPage = () => {
     const[player2Stats, setPlayer2Stats] = useState([]);
     const[player2, setPlayer2] = useState([]);
 
+    console.log('Liz');
+
     
     // === PLAYERS GENERAL INFO ===
 
